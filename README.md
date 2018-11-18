@@ -1,5 +1,5 @@
 # TagIE.ahk
-TagIE : simplify IE Automation functions
+Trying to simplify IE automation, I create simple functions in TagIE.ahk :D 
 
 
 ******************
