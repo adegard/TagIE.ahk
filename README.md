@@ -16,17 +16,24 @@ CODE EXAMPLES:
 Example 1 : Navigate, enter text in field, click on button, take a screenshot
 
 
-'
 #include TagIE.ahk
+
 tnav("https://www.google.com")
+
 tenter("ciao", "q")
+
 tclick("#tsf > div:nth-child(2) > div.A8SBwf > div.FPdoLc.VlcLAe > center > input[type=submit]:nth-child(1)")
+
 tsnap() 
+
 Sleep, 1000
+
 pwb.Quit()
+
 ExitApp
+
 Esc::ExitApp
-'
+
 
 
 
