@@ -12,6 +12,7 @@ tenter("text", "tag") : Enter value in Tag field. Tags: Selector (use Chrome Ins
 tread("tag") : fetch/read element text to variable. Tags: Selector (use Chrome Inspector) or id, or name, or class. Insteat of double Quotes,
 tsnap() : take snapshot and save it in jpg in "screenshot folder" (require Irfanview)"
 tselect("value", "ele"): SelectDropdown value 
+tscroll("ele"): Scroll page to element
 */
 
 
@@ -19,6 +20,22 @@ tselect("value", "ele"): SelectDropdown value
     pwb := ComObjCreate("InternetExplorer.Application") ;create IE Object
     pwb.visible:=true  ; Set the IE object to visible
 
+tscroll(ele)
+{
+    ToolTip, Scroll to element %ele%
+    WinActivate ahk_class IEFrame
+    ControlFocus, Internet Explorer_Server1, ahk_class IEFrame
+    pwb := PWB_Init(WinTitle) ; replaces WinGetTitle and PWB_Get()
+
+   pwb.document.querySelectorAll(ele).item[0].scrollIntoView(1) ;Scroll to element on page
+   pwb.document.GetElementsByName(ele).item[0].scrollIntoView(1) ;Scroll to element on page
+   pwb.document.getElementByID(ele).item[0].scrollIntoView(1) ;Scroll to element on page
+   pwb.document.getElementsByClassName(ele).item[0].scrollIntoView(1) ;Scroll to element on page
+   
+    
+   Sleep,500
+    return 
+}
 
 
 tselect(value, ele)
