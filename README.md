@@ -12,8 +12,8 @@ NOTE: To get IE DOM Selector there is various tools:</br>
 -use IE DOM Selector tool: </br>
 x32: https://github.com/adegard/TagIE.ahk/blob/master/IE_selector.exe </br>
 x64: https://github.com/adegard/TagIE.ahk/blob/master/IE_selector_x64.exe </br>
-</br>
-<img src="https://raw.githubusercontent.com/adegard/TagIE.ahk/master/TagIEexample.gif"  align="center">
+(Use Right Click to copy to clipboard and paste it in "Tag" or "element" in following functions)</br>
+
 ******************
 LIST OF FUNCTIONS:
 
@@ -73,7 +73,8 @@ Esc::ExitApp
 ******************
 Example 3 : Complete form compilation on Kijiji.it
 https://github.com/adegard/TagIE.ahk/blob/master/example3.ahk
-
+</br>
+<img src="https://raw.githubusercontent.com/adegard/TagIE.ahk/master/TagIEexample.gif"  align="center">
 ******************
 SCHEDULE YOUR TASKS:
 
