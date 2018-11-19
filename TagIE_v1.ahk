@@ -26,13 +26,22 @@ tselect(value, ele)
     ToolTip, Select in dropdown %ele%
     WinActivate ahk_class IEFrame
     ControlFocus, Internet Explorer_Server1, ahk_class IEFrame
+    
     pwb := PWB_Init(WinTitle) ; replaces WinGetTitle and PWB_Get()
+    
+pwb.document.GetElementsByTagName(ele).item[0].selectedIndex :=0 ;Set Tagname and Array value
+pwb.document.GetElementsByTagName(ele).item[0].Value := value ;Set Tagname and Array value
+pwb.document.querySelectorAll(ele).item[0].selectedIndex :=0 ;Set Tagname and Array value
+pwb.document.querySelectorAll(ele).item[0].Value := value ;Set Tagname and Array value
+pwb.document.GetElementsByName(ele).item[0].selectedIndex :=0 ;Set Tagname and Array value
+pwb.document.GetElementsByName(ele).item[0].Value := value ;Set Tagname and Array value
+pwb.document.getElementByID(ele).item[0].selectedIndex :=0 ;Set Tagname and Array value
+pwb.document.getElementByID(ele).item[0].Value := value ;Set Tagname and Array value
+pwb.document.getElementsByClassName(ele).item[0].selectedIndex :=0 ;Set Tagname and Array value
+pwb.document.getElementsByClassName(ele).item[0].Value := value ;Set Tagname and Array value
 
-    pwb.document.GetElementsByTagName(ele).item[0].Value := value
-   pwb.document.querySelectorAll(ele)[0].Value := value
-   pwb.document.GetElementsByName(ele).item[0].Value := value
-   pwb.document.getElementByID(ele).item[0].Value := value
-   pwb.document.getElementsByClassName(ele).item[0].Value := value
+pwb.document.querySelectorAll(ele)[0].selectedIndex :=0 ;Set Tagname and Array value
+pwb.document.querySelectorAll(ele)[0].Value := value ;Set Tagname and Array value
 
    Sleep,500
     return 
