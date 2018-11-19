@@ -7,7 +7,8 @@ FEATURES:</br>
 -Tooltip Show Steps</br>
 -Element identifier can be id, tagname, classname, or Selector 
 
-NOTE: To get IE DOM SelectorTHTML elements there is various tools:</br>
+*****************
+HOW To get IE DOM Selector/HTML elements? Use one of those tools:</br>
 -use Chrome Inspector </br>
 -use iWB2 learner: http://the-automator.com/download/iWB2_Learner.exe </br>
 -use IE DOM Selector tool: </br>
