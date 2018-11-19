@@ -21,7 +21,6 @@ CODE EXAMPLES:
 
 Example 1 : Navigate, enter text in field, click on button, take a screenshot
 
-
 #include TagIE.ahk
 
 tnav("https://www.google.com","max")
@@ -61,6 +60,9 @@ ExitApp
 
 Esc::ExitApp
 
+******************
+Example 3 : Complete form compilation on Kijiji.it
+https://github.com/adegard/TagIE.ahk/blob/master/example3.ahk
 
 ******************
 SCHEDULE YOUR TASKS:
