@@ -1,10 +1,10 @@
 # TagIE.ahk
 
 ***************
-FEATURES:
--Simplify your IE automation Scripts with simple readable functions with TagIE.ahk :D 
--TagIE auto-waits for a webpage element to appear and interacts with it as soon as it appears
--Element identifier can be id, tagname, classname, or Selector (use Chrome Inspector for that)
+FEATURES:</br>
+-Simplify your IE automation Scripts with simple readable functions with TagIE.ahk :D </br>
+-TagIE auto-waits for a webpage element to appear and interacts with it as soon as it appears</br>
+-Element identifier can be id, tagname, classname, or Selector (use Chrome Inspector for that)</br>
 
 ******************
 LIST OF FUNCTIONS:
