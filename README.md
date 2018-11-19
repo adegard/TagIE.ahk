@@ -14,6 +14,8 @@ LIST OF FUNCTIONS:
 - tenter("text", "tag")  : Enter value in Tag field. Tags: Selector (use Chrome Inspector) or id, or name, or class
 - tread("tag")  : fetch/read element text to variable. Tags: Selector (use Chrome Inspector) or id, or name, or class. Insteat of double Quotes, 
 - tsnap() : take snapshot and save it in jpg in "screenshot folder" (require Irfanview)"
+- tselect("value", "ele"): SelectDropdown value 
+- tscroll("ele"): Scroll page to element
 
 ******************
 CODE EXAMPLES:
