@@ -6,7 +6,8 @@ FEATURES:</br>
 -TagIE auto-waits for a webpage element to appear and interacts with it as soon as it appears</br>
 -Tooltip Show Steps</br>
 -Element identifier can be id, tagname, classname, or Selector (use Chrome Inspector for that)</br>
-
+</br>
+<img src="https://raw.githubusercontent.com/adegard/TagIE.ahk/master/TagIEexample.gif"  align="center">
 ******************
 LIST OF FUNCTIONS:
 
