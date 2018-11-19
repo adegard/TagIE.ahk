@@ -5,7 +5,13 @@ FEATURES:</br>
 -Simplify your IE automation Scripts with simple readable functions with TagIE.ahk :D </br>
 -TagIE auto-waits for a webpage element to appear and interacts with it as soon as it appears</br>
 -Tooltip Show Steps</br>
--Element identifier can be id, tagname, classname, or Selector (use Chrome Inspector for that)</br>
+-Element identifier can be id, tagname, classname, or Selector 
+
+NOTE: To get IE DOM Selector there is various tools:</br>
+-use Chrome Inspector </br>
+-use IE DOM Selector tool: </br>
+x32: https://github.com/adegard/TagIE.ahk/blob/master/IE_selector.exe </br>
+x64: https://github.com/adegard/TagIE.ahk/blob/master/IE_selector_x64.exe </br>
 </br>
 <img src="https://raw.githubusercontent.com/adegard/TagIE.ahk/master/TagIEexample.gif"  align="center">
 ******************
