@@ -24,7 +24,7 @@ Example 1 : Navigate, enter text in field, click on button, take a screenshot
 
 #include TagIE.ahk
 
-tnav("https://www.google.com")
+tnav("https://www.google.com","max")
 
 tenter("ciao", "q")
 
@@ -47,7 +47,7 @@ Example 2 : Navigate, get data from webpage
 
 #include TagIE.ahk
 
-tnav("http://the-automator.com/web-scraping-with-autohotkey/")
+tnav("http://the-automator.com/web-scraping-with-autohotkey/","max")
 
 Var:=tread("#post-1239 > div > p:nth-child(1) > strong")
 
