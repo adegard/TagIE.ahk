@@ -1,4 +1,4 @@
-;@A.DEGARDIN 2018, TagIE.ahk : simplify IE Automation functions
+;@A.DEGARDIN 2018, TagIE.ahk v1 : simplify IE Automation functions
 ; based on other people works. References:
 ;http://the-automator.com/web-scraping-with-autohotkey/
 ;https://autohotkey.com/boards/viewtopic.php?t=19889
@@ -11,6 +11,7 @@ tclick("tag") : Enter value in Tag field. Tags: Selector (use Chrome Inspector) 
 tenter("text", "tag") : Enter value in Tag field. Tags: Selector (use Chrome Inspector) or id, or name, or class
 tread("tag") : fetch/read element text to variable. Tags: Selector (use Chrome Inspector) or id, or name, or class. Insteat of double Quotes,
 tsnap() : take snapshot and save it in jpg in "screenshot folder" (require Irfanview)"
+tselect("value", "ele"): SelectDropdown value 
 */
 
 
@@ -18,6 +19,24 @@ tsnap() : take snapshot and save it in jpg in "screenshot folder" (require Irfan
     pwb := ComObjCreate("InternetExplorer.Application") ;create IE Object
     pwb.visible:=true  ; Set the IE object to visible
 
+
+
+tselect(value, ele)
+{
+    ToolTip, Select in dropdown %ele%
+    WinActivate ahk_class IEFrame
+    ControlFocus, Internet Explorer_Server1, ahk_class IEFrame
+    pwb := PWB_Init(WinTitle) ; replaces WinGetTitle and PWB_Get()
+
+    pwb.document.GetElementsByTagName(ele).item[0].Value := value
+   pwb.document.querySelectorAll(ele)[0].Value := value
+   pwb.document.GetElementsByName(ele).item[0].Value := value
+   pwb.document.getElementByID(ele).item[0].Value := value
+   pwb.document.getElementsByClassName(ele).item[0].Value := value
+
+   Sleep,500
+    return 
+}
 
 tsnap()
 {
@@ -64,7 +83,7 @@ tnav(url, option)
     
     while pwb.busy or pwb.ReadyState != 4 ;Wait for page to load
         Sleep, 100
-    Sleep, 500
+    Sleep, 1000
     return 
 }
 
@@ -79,26 +98,27 @@ tclick(ele)
    pwb.document.GetElementsByName(ele).item[0].click() 
    pwb.document.getElementByID(ele).item[0].click() 
    pwb.document.getElementsByClassName(ele).item[0].click() 
+   
+   pwb.document.all.tags(ele).item[0].fireEvent("onclick")  
+    MouseClick  := pwb.document.createEvent("MouseEvent")  ;Mouse Click
+    MouseClick.initMouseEvent("click",true,false,,,,,,,,,,,,,0) ;Initialize Event
+    pwb.document.querySelectorAll(ele)[0].dispatchEvent(MouseClick) 
+    
    Sleep,500
     return 
 }
 
 tenter(val, ele)
 {
+    ToolTip, Enter text in element %ele%
+
     WinActivate ahk_class IEFrame
     ControlFocus, Internet Explorer_Server1, ahk_class IEFrame
     pwb := PWB_Init(WinTitle) ; replaces WinGetTitle and PWB_Get()
    pwb.document.querySelectorAll(ele)[0].value := val
    pwb.document.GetElementsByName(ele).item[0].Value :=val ;Object Name- Set array value
-   pwb.document.getElementByID(ele).Value := val ;Unique ID-with dashes
+   pwb.document.getElementByID(ele).item[0].Value := val ;Unique ID-with dashes
    pwb.document.getElementsByClassName(ele).item[0].Value := val ;Set Classname and Array value
-   pwb.document.all.tags(ele).item[0].fireEvent("onclick")  ; Sometimes needed in conjunction with click()
-
-
-    MouseClick  := pwb.document.createEvent("MouseEvent")  ;Mouse Click
-    MouseClick.initMouseEvent("click",true,false,,,,,,,,,,,,,0) ;Initialize Event
-
-    pwb.document.querySelectorAll(ele)[0].dispatchEvent(MouseClick) ;Replace "**YOUR_Element_HERE**" with pointer to your Element
 
 
    Sleep,500
