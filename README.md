@@ -66,7 +66,7 @@ Esc::ExitApp
 ******************
 Example 3 : Complete form compilation on Kijiji.it
 https://github.com/adegard/TagIE.ahk/blob/master/example3.ahk
-<iframe width=640 height=340 frameborder="0" scrolling="no" src="https://screencast-o-matic.com/embed?sc=cFXqlor601&v=5&ff=1" allowfullscreen="true"></iframe>
+
 ******************
 SCHEDULE YOUR TASKS:
 
