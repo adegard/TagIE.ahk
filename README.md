@@ -7,15 +7,6 @@ FEATURES:</br>
 -Tooltip Show Steps</br>
 -Element identifier can be id, tagname, classname, or Selector 
 
-*****************
-HOW To get IE DOM Selector/HTML elements? Use one of those tools:</br>
--use Chrome Inspector </br>
--use iWB2 learner: http://the-automator.com/download/iWB2_Learner.exe </br>
--use IE DOM Selector tool: </br>
-x32: https://github.com/adegard/TagIE.ahk/blob/master/IE_selector.exe </br>
-x64: https://github.com/adegard/TagIE.ahk/blob/master/IE_selector_x64.exe </br>
-(Use Right Click to copy to clipboard and paste it in "Tag" or "element" in following functions)</br>
-
 ******************
 LIST OF FUNCTIONS:
 
@@ -27,9 +18,21 @@ LIST OF FUNCTIONS:
 - tselect("value", "ele"): SelectDropdown value 
 - tscroll("ele"): Scroll page to element
 
+
+*****************
+HOW To get IE DOM Selector/HTML elements? Use one of those tools:</br>
+-use Chrome Inspector </br>
+-use iWB2 learner: http://the-automator.com/download/iWB2_Learner.exe </br>
+-use IE DOM Selector tool: </br>
+x32: https://github.com/adegard/TagIE.ahk/blob/master/IE_selector.exe </br>
+x64: https://github.com/adegard/TagIE.ahk/blob/master/IE_selector_x64.exe </br>
+(Use Right Click to copy to clipboard and paste it in "Tag" or "element" in following functions)</br>
+
+</br>
+<img src="https://raw.githubusercontent.com/adegard/TagIE.ahk/master/GetSelectorsTags.gif"  align="center">
+
 ******************
 CODE EXAMPLES:
-
 
 Example 1 : Navigate, enter text in field, click on button, take a screenshot
 
