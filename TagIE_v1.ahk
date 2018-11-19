@@ -5,11 +5,13 @@
 ;*****************************************************
 ;LIST OF FUNCTIONS:
 ;******************
-;tnav("website", "option") : Navigate to webpage ; option: empty: minimized; "max" : Maximized window
-;tclick("tag")  : Enter value in Tag field. Tags: Selector (use Chrome Inspector) or id, or name, or class. Insteat of double Quotes, use singlo quotes in Selector (ie "input class='nameclass'")
-;tenter("text", "tag")  : Enter value in Tag field. Tags: Selector (use Chrome Inspector) or id, or name, or class
-;tsnap() : take snapshot and save it in jpg in "screenshot folder" (require Irfanview)"
-
+/*
+tnav("website", "option") : Navigate to webpage ; option: empty: minimized; "max" : Maximized window
+tclick("tag") : Enter value in Tag field. Tags: Selector (use Chrome Inspector) or id, or name, or class. Insteat of double Quotes, use singlo quotes in Selector (ie "input class='nameclass'")
+tenter("text", "tag") : Enter value in Tag field. Tags: Selector (use Chrome Inspector) or id, or name, or class
+tread("tag") : fetch/read element text to variable. Tags: Selector (use Chrome Inspector) or id, or name, or class. Insteat of double Quotes,
+tsnap() : take snapshot and save it in jpg in "screenshot folder" (require Irfanview)"
+*/
 
 
     ToolTip, Starting IE...
