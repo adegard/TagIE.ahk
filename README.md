@@ -20,7 +20,7 @@
 - Instal AutoHotKey (https://www.autohotkey.com/)
 - Save TagIE.ahk (https://github.com/adegard/TagIE.ahk/blob/master/TagIE.ahk)
 - Open Editor of your choice (I use AutoGUI in Tutorial: https://autohotkey.com/boards/viewtopic.php?t=10157)
-- save code example in the same folder and run it
+- save one code <a href="#examples">example</a> in the same folder and run it
 
 *****************
 
