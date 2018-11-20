@@ -31,8 +31,7 @@ x64: https://github.com/adegard/TagIE.ahk/blob/master/IE_selector_x64.exe </br>
 
 Example 1 : Navigate, enter text in field, click on button, take a screenshot
 <pre>
-<code>
-#include TagIE.ahk
+<code>#include TagIE.ahk
 tnav("https://www.google.com","max")
 tenter("ciao", "q")
 tclick("#tsf > div:nth-child(2) > div.A8SBwf > div.FPdoLc.VlcLAe > center > input[type=submit]:nth-child(1)")
@@ -40,23 +39,21 @@ tsnap()
 Sleep, 1000
 pwb.Quit()
 ExitApp
-Esc::ExitApp
-</code>
+Esc::ExitApp</code>
 </pre>
 
 ******************
 Example 2 : Navigate, get data from webpage
-
-<code>"
-#include TagIE.ahk
+<pre>
+<code>#include TagIE.ahk
 tnav("http://the-automator.com/web-scraping-with-autohotkey/","max")
 Var:=tread("#post-1239 > div > p:nth-child(1) > strong")
 techo(Var)
 Sleep, 1000
 pwb.Quit()
 ExitApp
-Esc::ExitApp"
-</code>
+Esc::ExitApp</code>
+</pre>
   
 ******************
 Example 3 : Complete form compilation on Kijiji.it
