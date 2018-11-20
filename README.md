@@ -1,7 +1,7 @@
 # TagIE.ahk
 
 ***************
-<b>FEATURES:</b></br>
+<a id="user-content-why-this" class="anchor" aria-hidden="true" href="#why-this"></a><h3>FEATURES:</h3></br>
 -Simplify your IE automation Scripts with simple readable functions with TagIE.ahk :D </br>
 -TagIE auto-waits for a webpage element to appear and interacts with it as soon as it appears</br>
 -Tooltip Show Steps</br>
