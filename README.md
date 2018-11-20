@@ -9,7 +9,7 @@ For any question/report a problem: open an <a href="https://github.com/adegard/T
 <a id="user-content-features" class="anchor" aria-hidden="true" href="#features"></a><h3>FEATURES:</h3></br>
 -Simplify your Internet Explorer automation Scripts with simple readable functions in AutoHotKey language </br>
 -TagIE auto-waits for a webpage element to appear and interacts with it as soon as it appears</br>
--Tooltip Show Steps and take screenshots for testing</br>
+-Log file (in the same directory) show automation steps done and time, to control testing execution</br>
 -Element identifier can be id, tagname, classname, or Selector 
 
 ******************
