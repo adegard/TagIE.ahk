@@ -5,9 +5,9 @@
 <p><strong>TagIE is a tool for digital process automation (RPA). It is maintained by Arnaud DEGARDIN (<a href="https://www.pc-dream.it" rel="nofollow">PC-Dream.it</a>), an Italian Developer. To start, check out above tutorial, slides, or video.</strong></p>
 
 <a id="user-content-features" class="anchor" aria-hidden="true" href="#features"></a><h3>FEATURES:</h3></br>
--Simplify your IE automation Scripts with simple readable functions with TagIE.ahk :D </br>
+-Simplify your Internet Explorer automation Scripts with simple readable functions in AutoHotKey language </br>
 -TagIE auto-waits for a webpage element to appear and interacts with it as soon as it appears</br>
--Tooltip Show Steps</br>
+-Tooltip Show Steps and take screenshots for testing</br>
 -Element identifier can be id, tagname, classname, or Selector 
 
 ******************
