@@ -15,9 +15,10 @@
 
 ******************
 <a id="user-content-setup" class="anchor" aria-hidden="true" href="#setup"></a><h3>Set Up:</h3>
-- Instal AutoHotKey
-- Save TagIE.ahk 
-- Open Editor of your choice, save code example in the same folder and run it
+- Instal AutoHotKey (https://www.autohotkey.com/)
+- Save TagIE.ahk (https://github.com/adegard/TagIE.ahk/blob/master/TagIE.ahk)
+- Open Editor of your choice (I use AutoGUI in Tutorial: https://autohotkey.com/boards/viewtopic.php?t=10157)
+- save code example in the same folder and run it
 
 *****************
 
