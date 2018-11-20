@@ -1,5 +1,5 @@
 # TagIE.ahk
-<p><a href="#features">Features</a> | <a href="#DOM-selector">HTML DOM selection</a> | <a href="#cheat-sheet">Cheat Sheet</a> | <a href="#tutorial">Tutorial</a> | <a href="#examples">Examples</a> | <a href="https://www.youtube.com/channel/UCj_yWYv_K-WJ4PARgEzP07Q/videos" rel="nofollow"><strong>Video</strong></a></p>
+<p><a href="#features">Features</a> | <a href="#demo">Demo</a> | <a href="#cheat-sheet">Cheat Sheet</a> | <a href="#DOM-selector">Tutorial</a> | <a href="#examples">Examples</a> | <a href="https://www.youtube.com/channel/UCj_yWYv_K-WJ4PARgEzP07Q/videos" rel="nofollow"><strong>Video</strong></a></p>
 
 <a id="user-content-features" class="anchor" aria-hidden="true" href="#features"></a><h3>FEATURES:</h3></br>
 -Simplify your IE automation Scripts with simple readable functions with TagIE.ahk :D </br>
@@ -56,7 +56,7 @@ Esc::ExitApp</code>
 </pre>
   
 ******************
-<a id="user-content-tutorial" class="anchor" aria-hidden="true" href="#tutorial"></a><h3>TUTORIAL : Complete form compilation on Kijiji.it </h3>
+<a id="user-content-demo" class="anchor" aria-hidden="true" href="#demo"></a><h3>DEMO : Complete form compilation on Kijiji.it </h3>
 https://github.com/adegard/TagIE.ahk/blob/master/example3.ahk
 </br>
 <img src="https://raw.githubusercontent.com/adegard/TagIE.ahk/master/TagIEexample.gif"  align="center">
