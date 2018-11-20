@@ -30,7 +30,8 @@ x64: https://github.com/adegard/TagIE.ahk/blob/master/IE_selector_x64.exe </br>
 <b>CODE EXAMPLES:</b>
 
 Example 1 : Navigate, enter text in field, click on button, take a screenshot
-<code>"
+<pre>
+<code>
 #include TagIE.ahk
 tnav("https://www.google.com","max")
 tenter("ciao", "q")
@@ -39,8 +40,9 @@ tsnap()
 Sleep, 1000
 pwb.Quit()
 ExitApp
-Esc::ExitApp"
+Esc::ExitApp
 </code>
+</pre>
 
 ******************
 Example 2 : Navigate, get data from webpage
