@@ -1,5 +1,7 @@
 # TagIE.ahk
-<p><a href="#features">Features</a> | <a href="#setup">Set Up</a> | <a href="#demo">Demo</a> | <a href="#cheat-sheet">Cheat Sheet</a> | <a href="#DOM-selector">Tutorial</a> | <a href="#examples">Examples</a> | <a href="https://www.youtube.com/channel/UCj_yWYv_K-WJ4PARgEzP07Q/videos" rel="nofollow"><strong>Video</strong></a></p>
+<p><a href="#features">Features</a> | <a href="#setup">Set Up</a> | <a href="#demo">Demo</a> | <a href="#cheat-sheet"><strong>Cheat Sheet</strong></a> | <a href="#DOM-selector">Tutorial</a> | <a href="#examples">Examples</a> | <a href="https://www.youtube.com/channel/UCj_yWYv_K-WJ4PARgEzP07Q/videos" rel="nofollow"><strong>Video</strong></a></p>
+
+<p><strong>TagIE is a tool for digital process automation (RPA). It is maintained by Arnaud DEGARDIN (<a href="https://www.pc-dream.it" rel="nofollow">PC-Dream.it</a>, an Italian Developer. To start, check out above tutorial, slides, or video.</strong></p>
 
 <a id="user-content-features" class="anchor" aria-hidden="true" href="#features"></a><h3>FEATURES:</h3></br>
 -Simplify your IE automation Scripts with simple readable functions with TagIE.ahk :D </br>
