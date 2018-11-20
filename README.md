@@ -17,7 +17,7 @@ LIST OF FUNCTIONS:
 - tsnap() : take snapshot and save it in jpg in "screenshot folder" (require Irfanview)"
 - tselect("value", "ele"): SelectDropdown value 
 - tscroll("ele"): Scroll page to element
-- techo("message"): return tooltip info, it could be text ("text")o variable (Var), to return in Tooltip during run
+- techo("message"): return tooltip info during run, it could be text ("text")o variable (Var)
 
 
 *****************
