@@ -20,7 +20,7 @@ techo("message"): return tooltip info during run, it could be text ("text")o var
 
     Gui Add, Edit, veditlog x8 y8 w480 h360 vMyEdit +Multi
 
-    Textlog = Starting Automation... %A_Hour%:%A_Min%  %A_Year%/%A_Mon%/%A_MDay%
+    Textlog = `n Starting Automation... %A_Hour%:%A_Min%  %A_Year%/%A_Mon%/%A_MDay%
     applog(Textlog)
     ;ToolTip,%Textlog%
 
