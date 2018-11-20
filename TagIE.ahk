@@ -1,4 +1,4 @@
-﻿;@A.DEGARDIN 2018, TagIE.ahk : simplify IE Automation functions
+;@A.DEGARDIN 2018, TagIE.ahk : simplify IE Automation functions
 ; based on other people works. References:
 ;http://the-automator.com/web-scraping-with-autohotkey/
 ;https://autohotkey.com/boards/viewtopic.php?t=19889
@@ -14,30 +14,48 @@ tsnap() : take snapshot and save it in jpg in "screenshot folder" (require Irfan
 techo("message"): return tooltip info during run, it could be text ("text")o variable (Var)
 */
 
-
-    ToolTip, Starting IE...
     pwb := ComObjCreate("InternetExplorer.Application") ;create IE Object
     pwb.visible:=true  ; Set the IE object to visible
 
 
+    Gui Add, Edit, veditlog x8 y8 w480 h360 vMyEdit +Multi
+
+    Textlog = Starting Automation... %A_Hour%:%A_Min%  %A_Year%/%A_Mon%/%A_MDay%
+    applog(Textlog)
+    ;ToolTip,%Textlog%
+
+
+applog(text)
+{
+    Gui Show, w501 h406, Log 
+    GuiControlGet, sCurrentText,, MyEdit
+    GuiControl,, MyEdit, %sCurrentText% %text%
+    
+    FileAppend, %text%, %A_ScriptName%.log
+}
+
+
 techo(msg)
 {
-    ToolTip, Echo: %msg%
+    Textlog = `n echo: %msg%
+    applog(Textlog)
+    ;ToolTip,%Textlog%
     Sleep, 500
-    ToolTip, Echo: %msg%
-    Sleep, 1000
 
 }
 
 
 tselect(ele, value)
 {
-    ToolTip, Select in dropdown %ele%
+    Textlog = `n tselect("%ele%", "%value%")
+    applog(Textlog)
+    ;ToolTip,%Textlog%
+
     WinActivate ahk_class IEFrame
     ControlFocus, Internet Explorer_Server1, ahk_class IEFrame
     pwb := PWB_Init(WinTitle) ; replaces WinGetTitle and PWB_Get()
 
-    pwb.document.GetElementsByTagName(ele).item[0].Value := value
+   pwb.document.GetElementsByTagName(ele).item[0].Value := value
    pwb.document.querySelectorAll(ele)[0].Value := value
    pwb.document.GetElementsByName(ele).item[0].Value := value
    pwb.document.getElementByID(ele).item[0].Value := value
@@ -49,7 +67,9 @@ tselect(ele, value)
 
 tsnap()
 {
-    ToolTip, Snap Page to jpg
+    Textlog = `n tsnap()
+    applog(Textlog)
+    ;ToolTip,%Textlog%
 
     PR =%A_ProgramFiles%\IrfanView\i_view32.exe
 
@@ -66,8 +86,10 @@ tsnap()
 
 tread(ele)
 {
-    ToolTip,Scrap values...
-
+    Textlog = `n tread("%ele%")
+    applog(Textlog)
+    ;ToolTip,%Textlog%
+    
     WinActivate ahk_class IEFrame
     ControlFocus, Internet Explorer_Server1, ahk_class IEFrame
     pwb := PWB_Init(WinTitle) ; replaces WinGetTitle and PWB_Get()
@@ -80,7 +102,10 @@ tread(ele)
 
 tnav(url, option)
 {
-    ToolTip,Navigate to %url%
+    Textlog = `n tnav("%url%","%option%")
+    applog(Textlog)
+    ;ToolTip,%Textlog%
+    
     WinActivate ahk_class IEFrame
     ControlFocus, Internet Explorer_Server1, ahk_class IEFrame
     pwb := PWB_Init(WinTitle) ; replaces WinGetTitle and PWB_Get()
@@ -98,7 +123,10 @@ tnav(url, option)
 
 tclick(ele)
 {
-    ToolTip, Click on element %ele%
+    Textlog = `n tclick("%ele%")
+    applog(Textlog)
+    ;ToolTip,%Textlog%
+    
     WinActivate ahk_class IEFrame
     ControlFocus, Internet Explorer_Server1, ahk_class IEFrame
     pwb := PWB_Init(WinTitle) ; replaces WinGetTitle and PWB_Get()
@@ -119,6 +147,10 @@ tclick(ele)
 
 tenter(val, ele)
 {
+    Textlog = `n tenter("%val%", "%ele%") 
+    applog(Textlog)
+    ;ToolTip,%Textlog%
+
     WinActivate ahk_class IEFrame
     ControlFocus, Internet Explorer_Server1, ahk_class IEFrame
     pwb := PWB_Init(WinTitle) ; replaces WinGetTitle and PWB_Get()
