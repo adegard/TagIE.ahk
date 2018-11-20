@@ -1,4 +1,4 @@
-;@A.DEGARDIN 2018, TagIE.ahk v1 : simplify IE Automation functions
+;@A.DEGARDIN 2018, TagIE.ahk : simplify IE Automation functions
 ; based on other people works. References:
 ;http://the-automator.com/web-scraping-with-autohotkey/
 ;https://autohotkey.com/boards/viewtopic.php?t=19889
@@ -11,8 +11,7 @@ tclick("tag") : Enter value in Tag field. Tags: Selector (use Chrome Inspector) 
 tenter("text", "tag") : Enter value in Tag field. Tags: Selector (use Chrome Inspector) or id, or name, or class
 tread("tag") : fetch/read element text to variable. Tags: Selector (use Chrome Inspector) or id, or name, or class. Insteat of double Quotes,
 tsnap() : take snapshot and save it in jpg in "screenshot folder" (require Irfanview)"
-tselect("value", "ele"): SelectDropdown value 
-tscroll("ele"): Scroll page to element
+techo("message"): it could be text ("text")o variable (Var), to return in Tooltip during run
 */
 
 
@@ -20,45 +19,29 @@ tscroll("ele"): Scroll page to element
     pwb := ComObjCreate("InternetExplorer.Application") ;create IE Object
     pwb.visible:=true  ; Set the IE object to visible
 
-tscroll(ele)
-{
-    ToolTip, Scroll to element %ele%
-    WinActivate ahk_class IEFrame
-    ControlFocus, Internet Explorer_Server1, ahk_class IEFrame
-    pwb := PWB_Init(WinTitle) ; replaces WinGetTitle and PWB_Get()
 
-   pwb.document.querySelectorAll(ele).item[0].scrollIntoView(1) ;Scroll to element on page
-   pwb.document.GetElementsByName(ele).item[0].scrollIntoView(1) ;Scroll to element on page
-   pwb.document.getElementByID(ele).item[0].scrollIntoView(1) ;Scroll to element on page
-   pwb.document.getElementsByClassName(ele).item[0].scrollIntoView(1) ;Scroll to element on page
-   
-    
-   Sleep,500
-    return 
+techo(msg)
+{
+    ToolTip, Echo: %msg%
+    Sleep, 500
+    ToolTip, Echo: %msg%
+    Sleep, 1000
+
 }
 
 
-tselect(value, ele)
+tselect(ele, value)
 {
     ToolTip, Select in dropdown %ele%
     WinActivate ahk_class IEFrame
     ControlFocus, Internet Explorer_Server1, ahk_class IEFrame
-    
     pwb := PWB_Init(WinTitle) ; replaces WinGetTitle and PWB_Get()
-    
-pwb.document.GetElementsByTagName(ele).item[0].selectedIndex :=0 ;Set Tagname and Array value
-pwb.document.GetElementsByTagName(ele).item[0].Value := value ;Set Tagname and Array value
-pwb.document.querySelectorAll(ele).item[0].selectedIndex :=0 ;Set Tagname and Array value
-pwb.document.querySelectorAll(ele).item[0].Value := value ;Set Tagname and Array value
-pwb.document.GetElementsByName(ele).item[0].selectedIndex :=0 ;Set Tagname and Array value
-pwb.document.GetElementsByName(ele).item[0].Value := value ;Set Tagname and Array value
-pwb.document.getElementByID(ele).item[0].selectedIndex :=0 ;Set Tagname and Array value
-pwb.document.getElementByID(ele).item[0].Value := value ;Set Tagname and Array value
-pwb.document.getElementsByClassName(ele).item[0].selectedIndex :=0 ;Set Tagname and Array value
-pwb.document.getElementsByClassName(ele).item[0].Value := value ;Set Tagname and Array value
 
-pwb.document.querySelectorAll(ele)[0].selectedIndex :=0 ;Set Tagname and Array value
-pwb.document.querySelectorAll(ele)[0].Value := value ;Set Tagname and Array value
+    pwb.document.GetElementsByTagName(ele).item[0].Value := value
+   pwb.document.querySelectorAll(ele)[0].Value := value
+   pwb.document.GetElementsByName(ele).item[0].Value := value
+   pwb.document.getElementByID(ele).item[0].Value := value
+   pwb.document.getElementsByClassName(ele).item[0].Value := value
 
    Sleep,500
     return 
@@ -109,7 +92,7 @@ tnav(url, option)
     
     while pwb.busy or pwb.ReadyState != 4 ;Wait for page to load
         Sleep, 100
-    Sleep, 1000
+    Sleep, 500
     return 
 }
 
@@ -136,14 +119,12 @@ tclick(ele)
 
 tenter(val, ele)
 {
-    ToolTip, Enter text in element %ele%
-
     WinActivate ahk_class IEFrame
     ControlFocus, Internet Explorer_Server1, ahk_class IEFrame
     pwb := PWB_Init(WinTitle) ; replaces WinGetTitle and PWB_Get()
    pwb.document.querySelectorAll(ele)[0].value := val
    pwb.document.GetElementsByName(ele).item[0].Value :=val ;Object Name- Set array value
-   pwb.document.getElementByID(ele).item[0].Value := val ;Unique ID-with dashes
+   pwb.document.getElementByID(ele).Value := val ;Unique ID-with dashes
    pwb.document.getElementsByClassName(ele).item[0].Value := val ;Set Classname and Array value
 
 
