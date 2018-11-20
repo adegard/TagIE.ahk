@@ -17,6 +17,7 @@ LIST OF FUNCTIONS:
 - tsnap() : take snapshot and save it in jpg in "screenshot folder" (require Irfanview)"
 - tselect("value", "ele"): SelectDropdown value 
 - tscroll("ele"): Scroll page to element
+- techo("message"): return tooltip info, it could be text ("text")o variable (Var), to return in Tooltip during run
 
 
 *****************
@@ -65,7 +66,7 @@ tnav("http://the-automator.com/web-scraping-with-autohotkey/","max")
 
 Var:=tread("#post-1239 > div > p:nth-child(1) > strong")
 
-MsgBox, "res :" %Var%
+techo(Var)
 
 Sleep, 1000
 
