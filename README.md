@@ -1,4 +1,4 @@
-<p><a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/adegard/TagIE.ahk/master/logo_pc_dream.png"><img src="https://raw.githubusercontent.com/adegard/TagIE.ahk/master/logo_pc_dream.png" height="111" align="right" style="max-width:100%;"></a></p>
+
 <h1 TagIE.ahk </h1>
 <p><a href="#features">Features</a> | <a href="#setup">Set Up</a> | <a href="#demo">Demo</a> | <a href="#cheat-sheet"><strong>Cheat Sheet</strong></a> | <a href="#DOM-selector">Tutorial</a> | <a href="#examples">Examples</a> | <a href="https://www.youtube.com/channel/UCj_yWYv_K-WJ4PARgEzP07Q/videos" rel="nofollow"><strong>Video</strong></a></p>
 
