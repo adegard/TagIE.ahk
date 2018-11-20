@@ -1,7 +1,7 @@
 # TagIE.ahk
-<p><a href="#why-this">Why This</a> | <a href="#cheat-sheet">Cheat Sheet</a> | <a href="#tutorial">Tutorial</a> | <a href="https://www.youtube.com/channel/UCj_yWYv_K-WJ4PARgEzP07Q/videos" rel="nofollow"><strong>Video</strong></a></p>
-***************
-<a id="user-content-why-this" class="anchor" aria-hidden="true" href="#why-this"></a><h3>FEATURES:</h3></br>
+<p><a href="#features">Features</a> | <a href="#DOM-selector">HTML DOM selection</a> | <a href="#cheat-sheet">Cheat Sheet</a> | <a href="#tutorial">Tutorial</a> | <a href="#examples">Examples</a> | <a href="https://www.youtube.com/channel/UCj_yWYv_K-WJ4PARgEzP07Q/videos" rel="nofollow"><strong>Video</strong></a></p>
+
+<a id="user-content-features" class="anchor" aria-hidden="true" href="#features"></a><h3>FEATURES:</h3></br>
 -Simplify your IE automation Scripts with simple readable functions with TagIE.ahk :D </br>
 -TagIE auto-waits for a webpage element to appear and interacts with it as soon as it appears</br>
 -Tooltip Show Steps</br>
@@ -15,7 +15,7 @@
 
 *****************
 
-<h3>HOW To get IE DOM Selector/HTML elements? Use one of those tools:</h3></br>
+<a id="user-content-DOM-selector" class="anchor" aria-hidden="true" href="#cheat-DOM-selector"></a><h3>HOW To get IE DOM Selector/HTML elements? Use one of those tools:</h3></br>
 -use Chrome Inspector </br>
 -use iWB2 learner: http://the-automator.com/download/iWB2_Learner.exe </br>
 -use IE DOM Selector tool: </br>
@@ -27,7 +27,7 @@ x64: https://github.com/adegard/TagIE.ahk/blob/master/IE_selector_x64.exe </br>
 <img src="https://raw.githubusercontent.com/adegard/TagIE.ahk/master/GetSelectorsTags.gif"  align="center">
 
 ******************
-<b>CODE EXAMPLES:</b>
+<<a id="user-content-examples" class="anchor" aria-hidden="true" href="#examples"></a><h3>CODE EXAMPLES:</h3>
 
 Example 1 : Navigate, enter text in field, click on button, take a screenshot
 <pre>
