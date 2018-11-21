@@ -11,6 +11,7 @@ For any question/report a problem: open an <a href="https://github.com/adegard/T
 -TagIE auto-waits for a webpage element to appear and interacts with it as soon as it appears</br>
 -Log file (in the same directory) show automation steps done and time, to control testing execution</br>
 -Element identifier can be id, tagname, classname, or Selector 
+-It's FREE (Open Source)
 
 <a id="user-content-demo" class="anchor" aria-hidden="true" href="#demo"></a><h3>DEMO: </h3>
 <img src="https://raw.githubusercontent.com/adegard/TagIE.ahk/master/HowtoUseTagIEeditortoregis.gif"  align="center">
