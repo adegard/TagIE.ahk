@@ -11,7 +11,7 @@ For any question/report a problem: open an <a href="https://github.com/adegard/T
 -TagIE auto-waits for a webpage element to appear and interacts with it as soon as it appears</br>
 -Log file (in the same directory) show automation steps done and time, to control testing execution</br>
 -Element identifier can be id, tagname, classname, or Selector </br>
--Find/Share scripts from/to <a href="https://gist.github.com/search?utf8=%E2%9C%93&q=TagIE&ref=searchresults" rel="nofollow"><strong>TagIE Gist List</strong></a>
+-Find/Share scripts from/to <a href="https://gist.github.com/search?utf8=%E2%9C%93&q=TagIE&ref=searchresults" rel="nofollow"><strong>TagIE Gist List</strong></a></br>
 -It's FREE (Open Source)
 
 <a id="user-content-demo" class="anchor" aria-hidden="true" href="#demo"></a><h3>DEMO: </h3>
