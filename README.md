@@ -41,9 +41,6 @@ x32: https://github.com/adegard/TagIE.ahk/blob/master/IE_selector.exe </br>
 x64: https://github.com/adegard/TagIE.ahk/blob/master/IE_selector_x64.exe </br>
 (Use Right Click to copy to clipboard and paste it in "Tag" or "element" in following functions)</br>
 
-</br>
-<img src="https://raw.githubusercontent.com/adegard/TagIE.ahk/master/GetSelectorsTags.gif"  align="center">
-
 ******************
 <a id="user-content-examples" class="anchor" aria-hidden="true" href="#examples"></a><h3>CODE EXAMPLES:</h3>
 
