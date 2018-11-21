@@ -1,18 +1,10 @@
 ;@A.DEGARDIN 2018, TagIE.ahk : simplify IE Automation functions
+;https://github.com/adegard/TagIE.ahk
 ; based on other people works. References:
 ;http://the-automator.com/web-scraping-with-autohotkey/
 ;https://autohotkey.com/boards/viewtopic.php?t=19889
 ;*****************************************************
-;LIST OF FUNCTIONS:
-;******************
-/*
-tnav("website", "option") : Navigate to webpage ; option: empty: minimized; "max" : Maximized window
-tclick("tag") : Enter value in Tag field. Tags: Selector (use Chrome Inspector) or id, or name, or class. Insteat of double Quotes, use singlo quotes in Selector (ie "input class='nameclass'")
-tenter("text", "tag") : Enter value in Tag field. Tags: Selector (use Chrome Inspector) or id, or name, or class
-tread("tag") : fetch/read element text to variable. Tags: Selector (use Chrome Inspector) or id, or name, or class. Insteat of double Quotes,
-tsnap() : take snapshot and save it in jpg in "screenshot folder" (require Irfanview)"
-techo("message"): return tooltip info during run, it could be text ("text")o variable (Var)
-*/
+
 
     pwb := ComObjCreate("InternetExplorer.Application") ;create IE Object
     pwb.visible:=true  ; Set the IE object to visible
@@ -43,6 +35,26 @@ techo(msg)
     Sleep, 500
 
 }
+
+tscroll(ele)
+{
+    Textlog = `n tscroll("%ele%")
+    applog(Textlog)
+
+    WinActivate ahk_class IEFrame
+    ControlFocus, Internet Explorer_Server1, ahk_class IEFrame
+    pwb := PWB_Init(WinTitle) ; replaces WinGetTitle and PWB_Get()
+    
+   pwb.document.querySelectorAll(ele).item[0].scrollIntoView(1) ;Scroll to element on page
+   pwb.document.getElementsByClassName(ele).item[0].scrollIntoView(1) ;Scroll to element on page
+   pwb.document.GetElementsByTagName(ele).item[0].scrollIntoView(1) ;Scroll to element on page
+   pwb.document.GetElementsByName(ele).item[0].scrollIntoView(1) ;Scroll to element on page
+   pwb.document.getElementByID(ele).item[0].scrollIntoView(1) ;Scroll to element on page
+   pwb.document.getElementsByClassName(ele).item[0].scrollIntoView(1) ;Scroll to element on page
+    
+}
+
+
 
 
 tselect(ele, value)
