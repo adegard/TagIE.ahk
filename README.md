@@ -6,11 +6,14 @@
 
 For any question/report a problem: open an <a href="https://github.com/adegard/TagIE.ahk/issues">issue</a>
 
-<a id="user-content-features" class="anchor" aria-hidden="true" href="#features"></a><h3>FEATURES:</h3></br>
+<a id="user-content-features" class="anchor" aria-hidden="true" href="#features"></a><h3>FEATURES:</h3>
 -Simplify your Internet Explorer automation Scripts with simple readable functions in AutoHotKey language </br>
 -TagIE auto-waits for a webpage element to appear and interacts with it as soon as it appears</br>
 -Log file (in the same directory) show automation steps done and time, to control testing execution</br>
 -Element identifier can be id, tagname, classname, or Selector 
+
+<a id="user-content-demo" class="anchor" aria-hidden="true" href="#demo"></a><h3>DEMO: </h3>
+<img src="https://raw.githubusercontent.com/adegard/TagIE.ahk/master/HowtoUseTagIEeditortoregis.gif"  align="center">
 
 ******************
 <a id="user-content-cheat-sheet" class="anchor" aria-hidden="true" href="#cheat-sheet"></a><h3>LIST OF FUNCTIONS:</h3>
@@ -27,10 +30,6 @@ FileAppend, %Var% `n, Test.txt ;Native AutoHotKey Function
 - Save and Unzip TagIE_Editor.zip
 - Open "TagIE_Editor.ahk"
 - TO USE SCREENSHOTS (tsnap funtion): install Irfanview (https://www.irfanview.com/)
-
-<a id="user-content-demo" class="anchor" aria-hidden="true" href="#demo"></a><h3>DEMO: </h3>
-</br>
-<img src="https://raw.githubusercontent.com/adegard/TagIE.ahk/master/HowtoUseTagIEeditortoregis.gif"  align="center">
 
 *****************
 
