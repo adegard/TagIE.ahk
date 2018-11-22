@@ -7,7 +7,7 @@
 For any question/report a problem: open an <a href="https://github.com/adegard/TagIE.ahk/issues">issue</a>
 
 <a id="user-content-features" class="anchor" aria-hidden="true" href="#features"></a><h3>FEATURES:</h3>
--Simplify your Internet Explorer automation Scripts with simple readable functions in AutoHotKey language </br>
+-Simplify your <strong>Internet Explorer and Chrome automation</strong> Scripts with simple readable functions in AutoHotKey language </br>
 -TagIE auto-waits for a webpage element to appear and interacts with it as soon as it appears</br>
 -<strong>Log file</strong> (in the same directory) show automation steps done and time, to control testing execution</br>
 -<strong>Element identifier Tools</strong> for: id, tagname, classname, and Selectors </br>
