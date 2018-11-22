@@ -10,7 +10,7 @@ For any question/report a problem: open an <a href="https://github.com/adegard/T
 -Simplify your Internet Explorer automation Scripts with simple readable functions in AutoHotKey language </br>
 -TagIE auto-waits for a webpage element to appear and interacts with it as soon as it appears</br>
 -<strong>Log file</strong> (in the same directory) show automation steps done and time, to control testing execution</br>
--Element identifier can be id, tagname, classname, or Selector </br>
+-<strong>Element identifier Tools</strong> for: id, tagname, classname, and Selectors </br>
 -Find/Share scripts from/to <a href="https://gist.github.com/search?utf8=%E2%9C%93&q=TagIE&ref=searchresults" rel="nofollow"><strong>TagIE Gist List</strong></a></br>
 -<strong>Schedule</strong> your TagIE Scripts inside the application, ones or daily</br>
 -It's <strong>FREE (Open Source)</strong>
