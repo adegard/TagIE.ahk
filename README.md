@@ -9,10 +9,11 @@ For any question/report a problem: open an <a href="https://github.com/adegard/T
 <a id="user-content-features" class="anchor" aria-hidden="true" href="#features"></a><h3>FEATURES:</h3>
 -Simplify your Internet Explorer automation Scripts with simple readable functions in AutoHotKey language </br>
 -TagIE auto-waits for a webpage element to appear and interacts with it as soon as it appears</br>
--Log file (in the same directory) show automation steps done and time, to control testing execution</br>
+-<strong>Log file</strong> (in the same directory) show automation steps done and time, to control testing execution</br>
 -Element identifier can be id, tagname, classname, or Selector </br>
 -Find/Share scripts from/to <a href="https://gist.github.com/search?utf8=%E2%9C%93&q=TagIE&ref=searchresults" rel="nofollow"><strong>TagIE Gist List</strong></a></br>
--It's FREE (Open Source)
+-<strong>Schedule</strong> your Task ones or daily
+-It's <strong>FREE (Open Source)</strong>
 
 <a id="user-content-demo" class="anchor" aria-hidden="true" href="#demo"></a><h3>DEMO: </h3>
 <img src="https://raw.githubusercontent.com/adegard/TagIE.ahk/master/HowtoUseTagIEeditortoregis.gif"  align="center">
