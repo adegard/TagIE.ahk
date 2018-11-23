@@ -16,7 +16,7 @@ For any question/report a problem: open an <a href="https://github.com/adegard/T
 -It's <strong>FREE (Open Source)</strong>
 
 <a id="user-content-demo" class="anchor" aria-hidden="true" href="#demo"></a><h3>DEMO: </h3>
-<img src="https://raw.githubusercontent.com/adegard/TagIE.ahk/master/HowtoUseTagIEeditortoregis.gif"  align="center">
+<img src="https://raw.githubusercontent.com/adegard/TagIE.ahk/master/FindingSelectororTaginTagIE.gif"  align="center">
 (Use Right Click to copy to clipboard and paste it in "Tag" or "element" in following functions)</br>
 
 ******************
