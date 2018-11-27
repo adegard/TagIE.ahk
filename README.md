@@ -30,9 +30,10 @@ FileAppend, %Var% `n, Test.txt ;Native AutoHotKey Function
 ******************
 <a id="user-content-setup" class="anchor" aria-hidden="true" href="#setup"></a><h3>Set Up:</h3>
 - Install AutoHotKey (https://www.autohotkey.com/)
-- Save and Unzip TagIE_Editor.zip
+- Save and Unzip <a href="https://github.com/adegard/TagIE.ahk/raw/master/TagIE_Editor.zip" rel="nofollow">TagIE_Editor.zip</a>
 - Open "TagIE_Editor.ahk"
 - TO USE SCREENSHOTS (tsnap funtion): install Irfanview (https://www.irfanview.com/)
+
 
 ******************
 <a id="user-content-examples" class="anchor" aria-hidden="true" href="#examples"></a><h3>CODE EXAMPLES:</h3>
