@@ -9,6 +9,7 @@ For any question/report a problem: open an <a href="https://github.com/adegard/T
 <a id="user-content-features" class="anchor" aria-hidden="true" href="#features"></a><h3>FEATURES:</h3>
 -Simplify your <strong>Internet Explorer and Chrome automation</strong> Scripts with simple readable functions in AutoHotKey language </br>
 -TagIE auto-waits for a webpage element to appear and interacts with it as soon as it appears</br>
+-<b>Use iMacros to Record Macros and convert it to TagIE with tool inside Menu > iMacros_converter</b></br>
 -<strong>Log file</strong> (in the same directory) show automation steps done and time, to control testing execution</br>
 -<strong>Element identifier Tools</strong> for: id, tagname, classname, and Selectors </br>
 -Find/Share scripts from/to <a href="https://github.com/adegard/TagIE_Scripts" rel="nofollow">TagIE Scripts</a></br>
