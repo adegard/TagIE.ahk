@@ -22,6 +22,7 @@ For any question/report a problem: open an <a href="https://github.com/adegard/T
 (Use Right Click to copy to clipboard and paste it in "Tag" or "element" in following functions)</br>
 
 ******************
+<img src="https://raw.githubusercontent.com/adegard/TagIE.ahk/master/RecorderTagIE.gif"  align="center">
 
 
 ******************
