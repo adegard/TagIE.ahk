@@ -8,6 +8,7 @@ For any question/report a problem: open an <a href="https://github.com/adegard/T
 
 <a id="user-content-features" class="anchor" aria-hidden="true" href="#features"></a><h3>FEATURES:</h3>
 -Simplify your <strong>Internet Explorer and Chrome automation</strong> Scripts with simple readable functions in AutoHotKey language </br>
+-<b>Macro Recorder (Beta) : Click on element on IE, TagIE record click sequences<b></br>
 -TagIE auto-waits for a webpage element to appear and interacts with it as soon as it appears</br>
 -<b>Use <a href="https://www.google.com/search?q=imacros+extension&oq=imacros+extension&aqs=chrome..69i57.9834j0j7&sourceid=chrome" rel="nofollow">iMacros</a> to easily record Macros and convert it to TagIE with tool inside Menu > iMacros_converter</b></br>
 -<strong>Log file</strong> (in the same directory) show automation steps done and time, to control testing execution</br>
