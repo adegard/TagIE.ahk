@@ -2,7 +2,7 @@
 <h1> TagIE.ahk </h1>
 <p><a href="#features">Features</a> | <a href="#setup">Set Up</a> | <a href="#demo">Demo</a> | <a href="#cheat-sheet"><strong>Cheat Sheet</strong></a> | <a href="#DOM-selector">Tutorial</a> | <a href="#examples">Simple Examples</a> | <a href="https://www.youtube.com/channel/UCj_yWYv_K-WJ4PARgEzP07Q/videos" rel="nofollow">Video</a> | <a href="https://github.com/adegard/TagIE_Scripts" rel="nofollow">TagIE Scripts</a> | <a href="https://autohotkey.com/boards/viewtopic.php?f=6&t=59120" rel="nofollow"><strong>AutohotKey Thread</strong></a></p>
 
-<p><strong>TagIE is a tool for digital process automation (RPA). It's a collection of the best ressources and functions done in AutoHotKey the user-friendly language of automation. It is maintained by Arnaud DEGARDIN (<a href="https://www.pc-dream.it" rel="nofollow">PC-Dream.it</a>), a French Developer. To start, check out <a href="#setup">Set Up</a> or above tutorial, examples, or video.</strong></p>
+<p><strong>TagIE is a tool for digital process automation (RPA). It's a collection of the best ressources and functions done in AutoHotKey the user-friendly language of automation. To start, check out <a href="#setup">Set Up</a> or above tutorial, examples, or video.</strong></p>
 
 For any question/report a problem: open an <a href="https://github.com/adegard/TagIE.ahk/issues">issue</a>
 
