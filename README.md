@@ -42,9 +42,10 @@ Example 1 : Navigate, enter text in field, click on button, take a screenshot
 #include TagIE.ahk
 tnav("https://www.google.com","")
 tenter("ciao", "q", 0)
-tclick("#body > div > div:nth-of-type(4) > form > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(3) > center > input:nth-of-type(1)", 0)
+tclick("body > div > div:nth-of-type(4) > form > div:nth-of-type(2) > div:nth-of-type(1) > div:nth-of-type(3) > center > input:nth-of-type(1)", 0)
+
 Sleep, 10000
-pwb.Quit()
+;pwb.Quit()
 ExitApp
 Esc::ExitApp
 </code>
