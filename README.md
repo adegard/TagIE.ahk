@@ -65,6 +65,23 @@ ExitApp
 Esc::ExitApp</code>
 </pre>
   
+  
+******************
+Example 3 : Navigate, export data from table to cvs file from webpage:
+<pre>
+<code>#include TagIE.ahk  
+url := "https://finance.yahoo.com/quote/%5EDJI/history?p=%5EDJI"
+tnav(url,"")
+tscroll("table", 0)
+table2csv("DOW.csv")
+
+Sleep, 5000
+pwb.Quit()
+ExitApp</code>
+</pre>
+    
+  
+  
 <a href="https://github.com/adegard/TagIE_Scripts" rel="nofollow">Other TagIE Scripts</a>
 
 
